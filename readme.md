@@ -16,7 +16,7 @@ A powerful, interactive, and foolproof PowerShell CLI tool designed to completel
 * **Zero-Touch Environment Setup:** Automatically locates your Conda installation, activates the selected environment via `conda run`, and installs `ultralytics` in the background if it's missing.
 
 ### Compatibility
-* **Supported Models:** Fully supports **Ultralytics YOLO11** (All vision tasks). *Support for future architectures (e.g., YOLOv12 ~ 26+) is planned for upcoming updates!*
+* **Supported Models:** Fully supports **Ultralytics YOLOv11** (All vision tasks). *Support for future architectures (e.g., YOLOv12 ~ 26+) is planned for upcoming updates!*
 * **Operating System:** Windows 10 / 11 (Requires PowerShell).
 * **Hardware:** Optimized for NVIDIA GPUs with CUDA support (RTX 50, 40, 30 series, etc.). CPU training is supported, but a dedicated GPU is highly recommended for the `AutoBatch` feature.
 
@@ -42,7 +42,7 @@ A powerful, interactive, and foolproof PowerShell CLI tool designed to completel
 * **跨環境依賴檢查：** 自動尋找系統中的 Conda，透過 `conda run` 跨環境執行訓練，若偵測到環境缺少 `ultralytics` 套件，將於背景自動補齊。
 
 ### 💻 支援清單
-* **支援模型:** 完美支援 **Ultralytics YOLO11** 全系列任務。*未來預計持續擴充支援新世代架構 (為未來的 YOLO26 做好準備！)*
+* **支援模型:** 完美支援 **Ultralytics YOLOv11** 全系列任務。*未來預計持續擴充支援新世代架構 (為未來的 YOLO26 做好準備！)*
 * **作業系統:** Windows 10 / 11 (需使用 PowerShell 執行)
 * **硬體需求:** 針對 NVIDIA 獨立顯卡與 CUDA 加速進行深度優化 (包含最新 RTX 50 系列)。亦支援純 CPU 訓練，但強烈建議使用 GPU 以完整體驗 `AutoBatch` 顯存控管功能
 
@@ -68,7 +68,7 @@ Ultralytics YOLOv11 の学習パイプラインを完全に自動化するため
 * **環境自動セットアップ：** Conda を自動的に探し出し、`conda run` を使用して環境を切り替えます。`ultralytics` パッケージが不足している場合は、バックグラウンドで自動的にインストールします。
 
 ### 対応環境・互換性
-* **対応モデル:** **Ultralytics YOLO11** の全タスクを完全サポート。*将来のバージョン（YOLOv26 など）への対応も今後のアップデートで予定しています！*
+* **対応モデル:** **Ultralytics YOLOv11** の全タスクを完全サポート。*将来のバージョン（YOLOv26 など）への対応も今後のアップデートで予定しています！*
 * **OS:** Windows 10 / 11 (PowerShell が必要です)。
 * **ハードウェア:** CUDA 対応の NVIDIA GPU (RTX 50シリーズなど) に最適化されています。CPU での学習も可能ですが、`AutoBatch` 機能を利用するには GPU が強く推奨されます。
 
