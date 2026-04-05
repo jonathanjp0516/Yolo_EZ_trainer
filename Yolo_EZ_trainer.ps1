@@ -38,11 +38,10 @@ function Get-CondaEnvs {
 $step = 1
 $config = @{}
 
-# 為了讓最後的返回鍵 (b) 正常運作，將總步驟改為 6 步
 while ($step -le 6) {
     Clear-Host
     Write-Host "==========================================" -ForegroundColor Cyan
-    Write-Host "          YOLO EZ Trainer v1.2.0          " -ForegroundColor Cyan
+    Write-Host "          YOLO EZ Trainer v1.1.0          " -ForegroundColor Cyan
     Write-Host "     (Input 'b' at any time to go back)   " -ForegroundColor Cyan
     Write-Host "==========================================" -ForegroundColor Cyan
 
@@ -187,12 +186,10 @@ while ($step -le 6) {
             if ($bat -eq "b") { continue }
             if ([string]::IsNullOrWhiteSpace($bat)) { $bat = "-1" }
 
-            # 新增: 學習率
             $lr = Read-Host "`nEnter Learning Rate (lr0) [Default: 0.01, or 'b']"
             if ($lr -eq "b") { continue }
             if ([string]::IsNullOrWhiteSpace($lr)) { $lr = "0.01" }
 
-            # 新增: 凍結層數
             Write-Host "`n[Freeze Backbone Hint]" -ForegroundColor DarkGray
             Write-Host "- Enter layer number (e.g. 10 for YOLOv8/11 backbone)" -ForegroundColor DarkGray
             $freeze = Read-Host "Enter Freeze layers [Default: 0 (None), or 'b']"
@@ -229,10 +226,8 @@ while ($step -le 6) {
             if ($config.customArgs) { Write-Host "Custom Args : $($config.customArgs)" -ForegroundColor DarkGray }
             Write-Host "------------------------------------------"
 
-            # 動態建立指令字串
             $baseCmd = "data=`"$($config.yamlPath)`" model=`"$($config.modelFile)`" epochs=$($config.epochs) imgsz=$($config.imgsz) batch=$($config.batch) lr0=$($config.lr0) project=`"runs`" name=`"train_result`""
             
-            # 若有設定凍結與自訂參數，才加到字串後面
             if ($config.freeze) { $baseCmd += " freeze=$($config.freeze)" }
             if ($config.customArgs) { $baseCmd += " $($config.customArgs)" }
 
@@ -254,11 +249,11 @@ while ($step -le 6) {
                 Write-Host "`nLaunching YOLOv11 Engine..." -ForegroundColor Green
                 Invoke-Expression "conda run --no-capture-output -n $($config.targetEnv) $trainCmd"
                 Pause
-                $step++ # 執行完畢後跳出迴圈
+                $step++
             } else {
                 Write-Host "`nTraining aborted. Have a nice day :3" -ForegroundColor DarkYellow
                 Pause
-                $step++ # 放棄執行後跳出迴圈
+                $step++
             }
         }
     }
