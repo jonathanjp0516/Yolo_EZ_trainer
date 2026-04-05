@@ -41,7 +41,7 @@ $config = @{}
 while ($step -le 6) {
     Clear-Host
     Write-Host "==========================================" -ForegroundColor Cyan
-    Write-Host "          YOLO EZ Trainer v1.1.0          " -ForegroundColor Cyan
+    Write-Host "          YOLO EZ Trainer v1.1.1          " -ForegroundColor Cyan
     Write-Host "     (Input 'b' at any time to go back)   " -ForegroundColor Cyan
     Write-Host "==========================================" -ForegroundColor Cyan
 
