@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software in your research or project, please cite it using the following metadata."
+authors:
+  - family-names: "Yang"
+    given-names: "Zong-Han"
+    alias: "jonathanjp0516"
+title: "YOLOv11 EZ Trainer: A quick way for Automated YOLO Training"
+version: 1.1.1
+date-released: 2026-04-06
+url: "https://github.com/jonathanjp0516/YOLO_EZ_Trainer"
+abstract: "A powerful, interactive PowerShell CLI tool designed to automate the Ultralytics YOLOv11 training pipeline, featuring state-machine navigation, AutoBatch support, and zero-touch environment setup."
+keywords:
+  - YOLOv11
+  - Ultralytics
+  - Automation
+  - PowerShell
+  - Machine Learning
+  - Computer Vision
