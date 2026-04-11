@@ -22,9 +22,8 @@ A powerful, interactive, and foolproof PowerShell CLI tool designed to completel
 
 ### How to Use
 1. Download `Yolo_EZ_Trainer.ps1`.
-2. Open **PowerShell as Administrator**.
-3. Navigate to the folder containing the script.
-4. Run: `.\Yolo_EZ_Trainer.ps1`
+2. Navigate to the folder containing the script.
+3. Run: `.\Yolo_EZ_Trainer.ps1`
 
 *(Tested & Optimized on NVIDIA GeForce RTX 5080 / CUDA 13.1)*
 
@@ -48,9 +47,8 @@ A powerful, interactive, and foolproof PowerShell CLI tool designed to completel
 
 ### 使用方式
 1. 下載 `Yolo_EZ_Trainer.ps1`
-2. 以**系統管理員身分**開啟 PowerShell
-3. 導航至腳本所在的資料夾
-4. 輸入：`.\Yolo_EZ_Trainer.ps1`
+2. 導航至腳本所在的資料夾
+3. 輸入：`.\Yolo_EZ_Trainer.ps1`
 
 *(已於 NVIDIA GeForce RTX 5080 / CUDA 13.1 環境下通過測試)*
 
@@ -74,9 +72,8 @@ Ultralytics YOLOv11 の学習パイプラインを完全に自動化するため
 
 ### 使用方法
 1. `Yolo_EZ_Trainer.ps1` をダウンロードします。
-2. **管理者として PowerShell** を開きます。
-3. スクリプトが保存されているフォルダに移動します。
-4. 実行：`.\Yolo_EZ_Trainer.ps1`
+2. スクリプトが保存されているフォルダに移動します。
+3. 実行：`.\Yolo_EZ_Trainer.ps1`
 
 *(NVIDIA GeForce RTX 5080 / CUDA 13.1 環境にて動作確認済み)*
 
